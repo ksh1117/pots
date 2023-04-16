@@ -1,0 +1,19 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /board
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/pots?serverTimeZone=Asia/Seoul
+    username: root
+    password: 1234
